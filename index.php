@@ -5,11 +5,12 @@
 ?><html>
 <head>
   <title>Oktoberfest Random Image Finder (ORIF)</title>
+  <link href="https://fonts.googleapis.com/css?family=Gochi+Hand" rel="stylesheet" >
   <style>
     a {
       color: #CE873D;
       text-decoration: none;
-      font-family: Verdana;
+      font-family: 'Gochi Hand', cursive;
       font-size: 20pt;
     }
     
@@ -24,8 +25,9 @@
       <td align="center"><img src="images/hacktoberfest.svg" width="60%" style="padding-bottom: 20px;" /></td>
     </tr>
     <td align="center">
-      <img src="<?php echo $oct->SRC; ?>"  width="100%" /><br />
-      <a href="<?php echo $oct->LINK; ?>"><?php echo $oct->TITLE; ?></a>
+      <a href="<?php echo $oct->LINK; ?>"><?php echo $oct->TITLE; ?></a><br />
+      <img src="<?php echo $oct->SRC; ?>"  width="100%" />
     </td>
+  </table>
 </body>
 </html>
